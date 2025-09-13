@@ -47,13 +47,16 @@ def download_file(url, output_path):
         response = requests.get(url, timeout=10)
         response.raise_for_status()
         content = response.text
-        if not content or not is_valid_json(content):
-            print(f"Skipping {url}: Content is empty or not valid JSON")
+        content_type = response.headers.get('content-type', '')
+        # Chỉ lưu nếu nội dung là JSON
+        if 'application/json' in content_type and content and is_valid_json(content):
+            Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+            with open(output_path, 'w', encoding='utf-8') as f:
+                f.write(content)
+            return True
+        else:
+            print(f"Skipping {url}: Content is not JSON (Content-Type: {content_type})")
             return False
-        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(content)
-        return True
     except Exception as e:
         print(f"Error downloading {url}: {e}")
         return False
@@ -120,9 +123,45 @@ def crawl_load_more(base_url, total_pages, url_map):
                 with open(output_path, 'w', encoding='utf-8') as f:
                     json.dump(page_data, f, ensure_ascii=False, indent=2)
                 url_map[page_url] = f"{GITHUB_RAW_BASE}/{output_path}"
+                # Duyệt JSON của trang để tải các URL liên quan
+                crawl_urls(page_data, base_path="channels")
             except json.JSONDecodeError as e:
                 print(f"Error parsing JSON in {output_path}: {e}")
                 os.remove(output_path)  # Xóa tệp không hợp lệ
+    return url_map
+
+def crawl_urls(data, base_path=""):
+    """Duyệt JSON để tìm và tải các URL liên quan"""
+    url_map = load_downloaded_urls()
+    if isinstance(data, dict):
+        for key, value in data.items():
+            if key == 'url' and isinstance(value, str) and value.startswith('http'):
+                if value in url_map:
+                    print(f"Skipping {value}: Already downloaded")
+                    continue
+                parsed_url = urlparse(value)
+                file_name = re.sub(r'[^\w\-_\.]', '_', parsed_url.path.strip('/')) + '.json'
+                output_path = os.path.join(OUTPUT_DIR, base_path, file_name)
+                if download_file(value, output_path):
+                    try:
+                        # Đọc và xóa related_providers, notice từ tệp vừa tải
+                        with open(output_path, 'r', encoding='utf-8') as f:
+                            sub_data = json.load(f)
+                        sub_data = remove_unwanted_keys(sub_data)
+                        with open(output_path, 'w', encoding='utf-8') as f:
+                            json.dump(sub_data, f, ensure_ascii=False, indent=2)
+                        url_map[value] = f"{GITHUB_RAW_BASE}/{output_path}"
+                        # Đệ quy để tải các URL trong JSON vừa tải
+                        crawl_urls(sub_data, base_path=os.path.join(base_path, os.path.dirname(file_name)))
+                    except json.JSONDecodeError as e:
+                        print(f"Error parsing JSON in {output_path}: {e}")
+                        os.remove(output_path)  # Xóa tệp không hợp lệ
+            else:
+                crawl_urls(value, base_path)
+    elif isinstance(data, list):
+        for item in data:
+            crawl_urls(item, base_path)
+    save_downloaded_urls(url_map)
     return url_map
 
 def main():
@@ -171,37 +210,8 @@ def main():
             print(f"Error parsing main.json: {e}")
             return
 
-    # Tải nội dung từ các liên kết trong JSON
-    def crawl_urls(data, base_path=""):
-        if isinstance(data, dict):
-            for key, value in data.items():
-                if key == 'url' and isinstance(value, str) and value.startswith('http'):
-                    if value in url_map:
-                        print(f"Skipping {value}: Already downloaded")
-                        continue
-                    parsed_url = urlparse(value)
-                    file_name = re.sub(r'[^\w\-_\.]', '_', parsed_url.path.strip('/')) + '.json'
-                    output_path = os.path.join(OUTPUT_DIR, base_path, file_name)
-                    if download_file(value, output_path):
-                        try:
-                            # Xóa related_providers và notice từ tệp vừa tải
-                            with open(output_path, 'r', encoding='utf-8') as f:
-                                sub_data = json.load(f)
-                            sub_data = remove_unwanted_keys(sub_data)
-                            with open(output_path, 'w', encoding='utf-8') as f:
-                                json.dump(sub_data, f, ensure_ascii=False, indent=2)
-                            url_map[value] = f"{GITHUB_RAW_BASE}/{output_path}"
-                        except json.JSONDecodeError as e:
-                            print(f"Error parsing JSON in {output_path}: {e}")
-                            os.remove(output_path)  # Xóa tệp không hợp lệ
-                else:
-                    crawl_urls(value, base_path)
-        elif isinstance(data, list):
-            for item in data:
-                crawl_urls(item, base_path)
-
-    # Duyệt JSON để tìm tất cả các URL còn lại
-    crawl_urls(json_data)
+    # Duyệt JSON chính để tải các URL liên quan
+    url_map = crawl_urls(json_data)
 
     # Thay thế URL trong JSON chính
     updated_json = replace_urls_in_json(json_data, url_map)
