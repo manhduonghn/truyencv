@@ -7,7 +7,7 @@ import re
 
 # Thư mục lưu trữ nội dung
 OUTPUT_DIR = "downloaded_content"
-GITHUB_RAW_BASE = "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main"
+GITHUB_RAW_BASE = "https://raw.githubusercontent.com/manhduonghn/truyencv/main"
 
 def download_file(url, output_path):
     """Tải nội dung từ URL và lưu vào tệp"""
