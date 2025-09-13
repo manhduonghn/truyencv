@@ -1,0 +1,35 @@
+{
+  "provider": {
+    "id": "truyensextv",
+    "name": "TruyenSexTV",
+    "color": "#046106",
+    "description": "Truyện sex hay, đọc truyện sex mới mỗi ngày",
+    "url": "https://truyenx.link/truyensextv",
+    "image": {
+      "url": null,
+      "type": "cover",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "channel": {
+    "id": "13279-channel",
+    "name": "Tuyệt thế dâm thần",
+    "description": "Nhất Đại Tông Sư Bước trước thất tinh bước sau vượt qua hổ, hai trăm hoa sen làm đầu pháo, kim cang đập chùy... Mấy chiêu Thái Cực Quyền hạ xuống như nước chảy mây trôi...",
+    "image": null,
+    "label": null,
+    "display": "text-only",
+    "type": "text",
+    "enable_detail": true,
+    "related": {
+      "url": "https://truyenx.link/truyensextv/channels/related/13279",
+      "request_headers": []
+    },
+    "share": {
+      "url": "https://truyenx.link/truyensextv/channels/share/tuyet-the-dam-than"
+    },
+    "remote_data": {
+      "url": "https://truyenx.link/truyensextv/channels/tuyet-the-dam-than"
+    }
+  }
+}
