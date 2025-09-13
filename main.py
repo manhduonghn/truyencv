@@ -8,9 +8,33 @@ import re
 # Thư mục lưu trữ nội dung
 OUTPUT_DIR = "downloaded_content"
 GITHUB_RAW_BASE = "https://raw.githubusercontent.com/manhduonghn/truyencv/main"
+DOWNLOADED_URLS_FILE = os.path.join(OUTPUT_DIR, "downloaded_urls.json")
+
+def load_downloaded_urls():
+    """Tải danh sách URL đã tải từ tệp downloaded_urls.json"""
+    try:
+        if os.path.exists(DOWNLOADED_URLS_FILE):
+            with open(DOWNLOADED_URLS_FILE, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        return {}
+    except Exception as e:
+        print(f"Error loading downloaded_urls.json: {e}")
+        return {}
+
+def save_downloaded_urls(url_map):
+    """Lưu danh sách URL đã tải vào tệp downloaded_urls.json"""
+    try:
+        Path(DOWNLOADED_URLS_FILE).parent.mkdir(parents=True, exist_ok=True)
+        with open(DOWNLOADED_URLS_FILE, 'w', encoding='utf-8') as f:
+            json.dump(url_map, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"Error saving downloaded_urls.json: {e}")
 
 def download_file(url, output_path):
-    """Tải nội dung từ URL và lưu vào tệp"""
+    """Tải nội dung từ URL và lưu vào tệp nếu chưa tồn tại"""
+    if os.path.exists(output_path):
+        print(f"Skipping {url}: File already exists at {output_path}")
+        return True
     try:
         response = requests.get(url)
         response.raise_for_status()
@@ -42,33 +66,77 @@ def replace_urls_in_json(json_data, url_map):
     replace_url(json_data)
     return json_data
 
+def remove_unwanted_keys(json_data):
+    """Loại bỏ related_providers và notice khỏi JSON"""
+    if isinstance(json_data, dict):
+        return {
+            key: remove_unwanted_keys(value)
+            for key, value in json_data.items()
+            if key not in ['related_providers', 'notice']
+        }
+    elif isinstance(json_data, list):
+        return [remove_unwanted_keys(item) for item in json_data]
+    return json_data
+
+def crawl_load_more(base_url, total_pages, per_page, url_map):
+    """Tải toàn bộ nội dung từ load_more, bỏ qua nếu đã tải"""
+    for page in range(1, total_pages + 1):
+        page_url = f"{base_url}?page={page}&size={per_page}"
+        if page_url in url_map:
+            print(f"Skipping {page_url}: Already downloaded")
+            continue
+        output_path = os.path.join(OUTPUT_DIR, f"channels/page_{page}.json")
+        if download_file(page_url, output_path):
+            url_map[page_url] = f"{GITHUB_RAW_BASE}/{output_path}"
+    return url_map
+
 def main():
     # URL chính của JSON
     main_url = "https://truyenx.link/truyensextv"
     
-    # Tải JSON chính
-    response = requests.get(main_url)
-    response.raise_for_status()
-    json_data = response.json()
+    # Tải danh sách URL đã tải
+    url_map = load_downloaded_urls()
 
-    # Tạo thư mục lưu trữ
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-
-    # Lưu trữ ánh xạ URL gốc sang URL GitHub
-    url_map = {}
-
-    # Lưu JSON chính
+    # Tải JSON chính để lấy thông tin load_more
     main_output_path = os.path.join(OUTPUT_DIR, "main.json")
-    with open(main_output_path, 'w', encoding='utf-8') as f:
-        json.dump(json_data, f, ensure_ascii=False, indent=2)
-    url_map[main_url] = f"{GITHUB_RAW_BASE}/{main_output_path}"
+    if main_url not in url_map:
+        response = requests.get(main_url)
+        response.raise_for_status()
+        json_data = response.json()
+
+        # Lấy thông tin load_more
+        load_more = json_data.get('load_more', {})
+        page_info = load_more.get('pageInfo', {})
+        total_pages = page_info.get('last_page', 1)
+        per_page = page_info.get('per_page', 30)
+        load_more_url = load_more.get('remote_data', {}).get('url', '')
+
+        # Tạo thư mục lưu trữ
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+        # Tải toàn bộ nội dung từ load_more trước
+        url_map = crawl_load_more(load_more_url, total_pages, per_page, url_map)
+
+        # Loại bỏ related_providers và notice
+        json_data = remove_unwanted_keys(json_data)
+
+        # Lưu JSON chính
+        with open(main_output_path, 'w', encoding='utf-8') as f:
+            json.dump(json_data, f, ensure_ascii=False, indent=2)
+        url_map[main_url] = f"{GITHUB_RAW_BASE}/{main_output_path}"
+    else:
+        print(f"Skipping {main_url}: Already downloaded")
+        with open(main_output_path, 'r', encoding='utf-8') as f:
+            json_data = json.load(f)
 
     # Tải nội dung từ các liên kết trong JSON
     def crawl_urls(data, base_path=""):
         if isinstance(data, dict):
             for key, value in data.items():
                 if key == 'url' and isinstance(value, str) and value.startswith('http'):
-                    # Tạo tên tệp từ URL
+                    if value in url_map:
+                        print(f"Skipping {value}: Already downloaded")
+                        continue
                     parsed_url = urlparse(value)
                     file_name = re.sub(r'[^\w\-_\.]', '_', parsed_url.path.strip('/')) + '.json'
                     output_path = os.path.join(OUTPUT_DIR, base_path, file_name)
@@ -80,7 +148,7 @@ def main():
             for item in data:
                 crawl_urls(item, base_path)
 
-    # Duyệt JSON để tìm tất cả các URL
+    # Duyệt JSON để tìm tất cả các URL còn lại
     crawl_urls(json_data)
 
     # Thay thế URL trong JSON chính
@@ -89,6 +157,9 @@ def main():
     # Lưu JSON đã cập nhật
     with open(main_output_path, 'w', encoding='utf-8') as f:
         json.dump(updated_json, f, ensure_ascii=False, indent=2)
+
+    # Lưu danh sách URL đã tải
+    save_downloaded_urls(url_map)
 
 if __name__ == "__main__":
     main()
