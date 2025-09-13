@@ -1,0 +1,35 @@
+{
+  "provider": {
+    "id": "truyensextv",
+    "name": "TruyenSexTV",
+    "color": "#046106",
+    "description": "Truyện sex hay, đọc truyện sex mới mỗi ngày",
+    "url": "https://truyenx.link/truyensextv",
+    "image": {
+      "url": null,
+      "type": "cover",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "channel": {
+    "id": "4066-channel",
+    "name": "Những cuộc tình không ràng buộc",
+    "description": "Hải và Trân là đồng nghiệp, một sự thân thiết tự nhiên hình thành giữa hai con người trưởng thành, cùng chí hướng nhưng không có ràng buộc về tình cảm nam nữ. Trân, từ lâu...",
+    "image": null,
+    "label": null,
+    "display": "text-only",
+    "type": "text",
+    "enable_detail": true,
+    "related": {
+      "url": "https://truyenx.link/truyensextv/channels/related/4066",
+      "request_headers": []
+    },
+    "share": {
+      "url": "https://truyenx.link/truyensextv/channels/share/nhung-cuoc-tinh-khong-rang-buoc"
+    },
+    "remote_data": {
+      "url": "https://truyenx.link/truyensextv/channels/nhung-cuoc-tinh-khong-rang-buoc"
+    }
+  }
+}
