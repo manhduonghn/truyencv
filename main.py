@@ -67,32 +67,52 @@ def replace_urls_in_json(json_data, url_map):
     return json_data
 
 def remove_unwanted_keys(json_data):
-    """Loại bỏ related_providers và notice khỏi JSON"""
+    """Loại bỏ related_providers, notice và các mục liên quan khỏi JSON"""
     if isinstance(json_data, dict):
-        return {
+        # Xóa các khóa liên quan đến related_providers và notice
+        filtered_data = {
             key: remove_unwanted_keys(value)
             for key, value in json_data.items()
             if key not in ['related_providers', 'notice']
         }
+        # Xóa các mục trong groups có chứa remote_data.url liên quan đến provider
+        if 'groups' in filtered_data:
+            filtered_data['groups'] = [
+                group for group in filtered_data['groups']
+                if not (
+                    'remote_data' in group and
+                    isinstance(group['remote_data'], dict) and
+                    'url' in group['remote_data'] and
+                    'type=provider' in group['remote_data']['url']
+                )
+            ]
+        return filtered_data
     elif isinstance(json_data, list):
         return [remove_unwanted_keys(item) for item in json_data]
     return json_data
 
-def crawl_load_more(base_url, total_pages, per_page, url_map):
+def crawl_load_more(base_url, total_pages, url_map):
     """Tải toàn bộ nội dung từ load_more, bỏ qua nếu đã tải"""
     for page in range(1, total_pages + 1):
-        page_url = f"{base_url}?page={page}&size={per_page}"
+        page_url = f"{base_url}?page={page}"
         if page_url in url_map:
             print(f"Skipping {page_url}: Already downloaded")
             continue
         output_path = os.path.join(OUTPUT_DIR, f"channels/page_{page}.json")
         if download_file(page_url, output_path):
+            # Đọc và xóa related_providers, notice từ trang vừa tải
+            with open(output_path, 'r', encoding='utf-8') as f:
+                page_data = json.load(f)
+            page_data = remove_unwanted_keys(page_data)
+            with open(output_path, 'w', encoding='utf-8') as f:
+                json.dump(page_data, f, ensure_ascii=False, indent=2)
             url_map[page_url] = f"{GITHUB_RAW_BASE}/{output_path}"
     return url_map
 
 def main():
     # URL chính của JSON
     main_url = "https://truyenx.link/truyensextv"
+    load_more_base_url = "https://truyenx.link/truyensextv/channels"
     
     # Tải danh sách URL đã tải
     url_map = load_downloaded_urls()
@@ -108,14 +128,12 @@ def main():
         load_more = json_data.get('load_more', {})
         page_info = load_more.get('pageInfo', {})
         total_pages = page_info.get('last_page', 1)
-        per_page = page_info.get('per_page', 30)
-        load_more_url = load_more.get('remote_data', {}).get('url', '')
 
         # Tạo thư mục lưu trữ
         os.makedirs(OUTPUT_DIR, exist_ok=True)
 
         # Tải toàn bộ nội dung từ load_more trước
-        url_map = crawl_load_more(load_more_url, total_pages, per_page, url_map)
+        url_map = crawl_load_more(load_more_base_url, total_pages, url_map)
 
         # Loại bỏ related_providers và notice
         json_data = remove_unwanted_keys(json_data)
@@ -141,6 +159,12 @@ def main():
                     file_name = re.sub(r'[^\w\-_\.]', '_', parsed_url.path.strip('/')) + '.json'
                     output_path = os.path.join(OUTPUT_DIR, base_path, file_name)
                     if download_file(value, output_path):
+                        # Xóa related_providers và notice từ tệp vừa tải
+                        with open(output_path, 'r', encoding='utf-8') as f:
+                            sub_data = json.load(f)
+                        sub_data = remove_unwanted_keys(sub_data)
+                        with open(output_path, 'w', encoding='utf-8') as f:
+                            json.dump(sub_data, f, ensure_ascii=False, indent=2)
                         url_map[value] = f"{GITHUB_RAW_BASE}/{output_path}"
                 else:
                     crawl_urls(value, base_path)
