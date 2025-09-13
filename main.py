@@ -123,16 +123,18 @@ def crawl_load_more(base_url, total_pages, url_map):
                 with open(output_path, 'w', encoding='utf-8') as f:
                     json.dump(page_data, f, ensure_ascii=False, indent=2)
                 url_map[page_url] = f"{GITHUB_RAW_BASE}/{output_path}"
-                # Duyệt JSON của trang để tải các URL liên quan
-                crawl_urls(page_data, base_path="channels")
+                # Đệ quy tải các URL trong trang vừa tải
+                url_map = crawl_urls(page_data, base_path="channels")
             except json.JSONDecodeError as e:
                 print(f"Error parsing JSON in {output_path}: {e}")
                 os.remove(output_path)  # Xóa tệp không hợp lệ
     return url_map
 
-def crawl_urls(data, base_path=""):
-    """Duyệt JSON để tìm và tải các URL liên quan"""
-    url_map = load_downloaded_urls()
+def crawl_urls(data, base_path="", url_map=None):
+    """Duyệt JSON để tìm và tải tất cả các URL liên quan"""
+    if url_map is None:
+        url_map = load_downloaded_urls()
+    
     if isinstance(data, dict):
         for key, value in data.items():
             if key == 'url' and isinstance(value, str) and value.startswith('http'):
@@ -151,17 +153,17 @@ def crawl_urls(data, base_path=""):
                         with open(output_path, 'w', encoding='utf-8') as f:
                             json.dump(sub_data, f, ensure_ascii=False, indent=2)
                         url_map[value] = f"{GITHUB_RAW_BASE}/{output_path}"
-                        # Đệ quy để tải các URL trong JSON vừa tải
-                        crawl_urls(sub_data, base_path=os.path.join(base_path, os.path.dirname(file_name)))
+                        # Đệ quy tải các URL trong JSON vừa tải
+                        url_map = crawl_urls(sub_data, base_path=os.path.join(base_path, os.path.dirname(file_name)), url_map=url_map)
                     except json.JSONDecodeError as e:
                         print(f"Error parsing JSON in {output_path}: {e}")
                         os.remove(output_path)  # Xóa tệp không hợp lệ
             else:
-                crawl_urls(value, base_path)
+                url_map = crawl_urls(value, base_path, url_map)
     elif isinstance(data, list):
         for item in data:
-            crawl_urls(item, base_path)
-    save_downloaded_urls(url_map)
+            url_map = crawl_urls(item, base_path, url_map)
+    
     return url_map
 
 def main():
@@ -210,7 +212,7 @@ def main():
             print(f"Error parsing main.json: {e}")
             return
 
-    # Duyệt JSON chính để tải các URL liên quan
+    # Đệ quy tải các URL trong JSON chính
     url_map = crawl_urls(json_data)
 
     # Thay thế URL trong JSON chính
