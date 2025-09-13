@@ -1,0 +1,35 @@
+{
+  "provider": {
+    "id": "truyensextv",
+    "name": "TruyenSexTV",
+    "color": "#046106",
+    "description": "Truyện sex hay, đọc truyện sex mới mỗi ngày",
+    "url": "https://truyenx.link/truyensextv",
+    "image": {
+      "url": null,
+      "type": "cover",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "channel": {
+    "id": "12994-channel",
+    "name": "Thi - Quyển 5",
+    "description": "Trước cửa hang được dùng đá tảng xây dựng lại, trông giống như một đường hầm vậy. Hai bên, còn được đặt hai con bò đá. Thứ này rõ ràng được dùng để trấn áp dòng...",
+    "image": null,
+    "label": null,
+    "display": "text-only",
+    "type": "text",
+    "enable_detail": true,
+    "related": {
+      "url": "https://truyenx.link/truyensextv/channels/related/12994",
+      "request_headers": []
+    },
+    "share": {
+      "url": "https://truyenx.link/truyensextv/channels/share/thi-quyen-5"
+    },
+    "remote_data": {
+      "url": "https://truyenx.link/truyensextv/channels/thi-quyen-5"
+    }
+  }
+}

@@ -1,0 +1,620 @@
+{
+  "grid_number": 1,
+  "channels": [
+    {
+      "id": "2545-channel",
+      "name": "Ma Vương - Quyển 10",
+      "description": "Lột Da... Lúc này Sa Đà thầm hối hận, lần đầu tiên hắn hối hận về hành vi ra tay với Hàn gia. Bố Lai Ân này quả thực là kẻ địch không thể thắng nổi, hắn ngoài việc không...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2545",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/ma-vuong-quyen-10"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/ma-vuong-quyen-10"
+      }
+    },
+    {
+      "id": "2544-channel",
+      "name": "Quán Trọ Hạnh Phúc",
+      "description": "Từ năm tôi lên 12 tuổi thì đã bị dậy thì có phần sớm hơn đồng bạn trang lứa, giọng nói tôi trầm hơn và mọc lông nách cũng như lông mu dần dần cũng khá rậm rạp. Thế nhưng...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2544",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/quan-tro-hanh-phuc"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/quan-tro-hanh-phuc"
+      }
+    },
+    {
+      "id": "2543-channel",
+      "name": "Món quà sinh nhật tuyệt vời từ mẹ",
+      "description": "Hôm đó là sinh nhật lần thứ 18 của em. Em vui mừng khôn xiết vì đây là cái tuổi sắp bước vào đời. Em được tận hưởng cơ thể phụ nữ từ mẹ em. Mẹ em tuy là đã ngoài 50...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2543",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/mon-qua-sinh-nhat-tuyet-voi-tu-me"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/mon-qua-sinh-nhat-tuyet-voi-tu-me"
+      }
+    },
+    {
+      "id": "2542-channel",
+      "name": "Trẻ thích già, già thích trẻ",
+      "description": "Nghĩa chở Huyền đi làm móng tay. Bình thường Huyền lái xe đi, nhưng hôm nay nàng nhờ chồng nàng là Nghĩa chở tới tiệm LE NAIL FOR YOU quen thuộc. Tiệm của người Việt Nam làm chủ...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2542",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/tre-thich-gia-gia-thich-tre"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/tre-thich-gia-gia-thich-tre"
+      }
+    },
+    {
+      "id": "2541-channel",
+      "name": "Chị Đông",
+      "description": "Tôi gặp và quen chị vào cuối năm 1979 tại trại chuyển tiếp người tị nạn ở Kuala Lumpur, Malaysia. Tôi đến từ trại tị nạn Pulau Bidong theo danh sách định cư Mỹ. Chị cũng có danh...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2541",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/chi-dong"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/chi-dong"
+      }
+    },
+    {
+      "id": "2540-channel",
+      "name": "Gái có chồng mà dâm",
+      "description": "Có 1 dạo để ý thấy vợ thường xuyên cầm điện thoại nhắn tin chát chít, hỏi thì vợ kêu là nhắn tin với đám bạn chị em. Nhưng thấy vợ đi đâu cũng cầm điện thoại theo, kể...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2540",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/gai-co-chong-ma-dam"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/gai-co-chong-ma-dam"
+      }
+    },
+    {
+      "id": "2539-channel",
+      "name": "Trịnh Khâm Du Hý",
+      "description": "Hồi ký Trịnh Khâm Cái mưa đầu mùa tháng sáu cũng là lúc nhà ông Trịnh Khâm đón chào cậu bé vàng trong gia đình của Trịnh gia, đứa cháu nội đích Trịnh mà bấy lâu nay ông là...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2539",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/trinh-kham-du-hy"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/trinh-kham-du-hy"
+      }
+    },
+    {
+      "id": "2538-channel",
+      "name": "Anh chị quan hệ trên gác",
+      "description": "Vào năm đầu đi Sài Gòn để học tôi dự định ở ký túc xá, nhưng khi đăng ký thì đã hết chỗ nên tôi đành tìm kiếm chỗ trọ ở ngoài. Lúc đó thì tôi tình cờ gặp anh Cò, tên...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2538",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/anh-chi-quan-he-tren-gac"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/anh-chi-quan-he-tren-gac"
+      }
+    },
+    {
+      "id": "2537-channel",
+      "name": "Vợ thủ dâm trước mặt người lạ",
+      "description": "Tuần vừa rồi em có hẹn một bạn bên bảo hiểm 8 giờ tối qua để giới thiệu gói bảo hiểm. 8 giờ tối cùng giờ em đi làm về. Mà hôm đó em lại có việc bận nên quên không báo...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2537",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/vo-thu-dam-truoc-mat-nguoi-la"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/vo-thu-dam-truoc-mat-nguoi-la"
+      }
+    },
+    {
+      "id": "2536-channel",
+      "name": "Kỷ niệm mùa đông",
+      "description": "Mỗi khi mùa đông đến thì làm tôi lại nhớ đến em, nhớ đến cái cảm giác đêm hôm ấy mình cùng nhau ra khu chung cư bên cạnh những người dân đi bộ tập thể dục thì chen vào đó...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2536",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/ky-niem-mua-dong"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/ky-niem-mua-dong"
+      }
+    },
+    {
+      "id": "2535-channel",
+      "name": "Bữa tiệc sinh nhật",
+      "description": "Cái cảm giác thật ấm áp trong ngày mùa đông được bên nhau, được nắm tay nhau đi khắp phố phường Hà Nội, ăn món ăn mình thích. Sau khi đi ăn tối cùng nhau, điểm dừng chân của 2...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2535",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/bua-tiec-sinh-nhat"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/bua-tiec-sinh-nhat"
+      }
+    },
+    {
+      "id": "2534-channel",
+      "name": "Mùng 2 Tết với đồng nghiệp cũ",
+      "description": "Sáng mùng 2, thằng nhóc đồng nghiệp cũ gọi điện thoại chúc Tết, 2 chị em nói chuyện rôm rả một hồi, cái nó hỏi thăm chồng Ngân có nhà không? Ngân bảo có, lão đang nằm vọc ciu...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2534",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/mung-2-tet-voi-dong-nghiep-cu"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/mung-2-tet-voi-dong-nghiep-cu"
+      }
+    },
+    {
+      "id": "2533-channel",
+      "name": "Vợ thích bị hiếp dâm",
+      "description": "Vợ em bị nứng lồn nên tưởng tượng cảnh bị hiếp dâm như này các bác ạ... Hai vợ chồng đang đi nghỉ cuối tuần... Tới resort khoảng 11 giờ trưa gì đó nên vợ vào phòng nằm...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2533",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/vo-thich-bi-hiep-dam"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/vo-thich-bi-hiep-dam"
+      }
+    },
+    {
+      "id": "2532-channel",
+      "name": "Tất niên với em nhân viên",
+      "description": "Tiệc cuối năm của công ty diễn ra như thường niên, chỉ khác là năm nay tao có thêm 1 em nhân viên chân dài da trắng phải nói là xuất sắc. Sau 2 tăng rượu bia ca hát thì tao và em nó...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2532",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/tat-nien-voi-em-nhan-vien"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/tat-nien-voi-em-nhan-vien"
+      }
+    },
+    {
+      "id": "2531-channel",
+      "name": "Tâm sự của những đứa bị loạn luân",
+      "description": "Mình là Tiên năm nay 18 tuổi, mình có một người anh tên Toàn vào buổi tối anh mình thường xuyên qua phòng mình, mình thì có sở thích là ngủ mặc quần lót và áo phong, anh Toàn qua...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2531",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/tam-su-cua-nhung-dua-bi-loan-luan"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/tam-su-cua-nhung-dua-bi-loan-luan"
+      }
+    },
+    {
+      "id": "2530-channel",
+      "name": "Ngoại tình với em chồng",
+      "description": "Xin chào mọi người, mình năm nay 39 tuổi đã có chồng con. Do rảnh rỗi dịp Tết nên mình xin chia sẻ câu chuyện của mình. Mình là người dâm đãng nhưng biết giữ kẽ. Ra đường thì...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2530",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/ngoai-tinh-voi-em-chong"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/ngoai-tinh-voi-em-chong"
+      }
+    },
+    {
+      "id": "2529-channel",
+      "name": "Họp lớp đầu xuân",
+      "description": "Vào một ngày đầu xuân em đi họp lớp, cái có tí bia trong người, mà ác cái đang ngồi cạnh thằng bạn ngày xưa học chung lớp, Mà công nhận nhìn nó bữa nay đẹp trai ghê, nên em lấy...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2529",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/hop-lop-dau-xuan"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/hop-lop-dau-xuan"
+      }
+    },
+    {
+      "id": "2528-channel",
+      "name": "Sóng gió gia tộc",
+      "description": "Nói đến gia tộc họ Chu ở thành phố Tô Châu, khắp tỉnh Giang Tô đều biết đây vốn là một gia tộc lớn từ mấy trăm năm nay. Tổ tiên Chu gia trước đây đều là những phú hộ...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2528",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/song-gio-gia-toc"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/song-gio-gia-toc"
+      }
+    },
+    {
+      "id": "2527-channel",
+      "name": "Thím là con đĩ",
+      "description": "Rời xa thành thị “Dậy... dậy đi Hải ơi... sáng rồi con... dậy ăn sáng rồi còn đi cho sớm...” Tiếng mẹ Hải thúc giục... Năm nào cũng thế đến kỳ nghỉ hè là ông Việt...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2527",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/thim-la-con-di"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/thim-la-con-di"
+      }
+    },
+    {
+      "id": "2526-channel",
+      "name": "Cái máy đẻ của chính con mình",
+      "description": "Tôi bị gia đình chồng đuổi đi sau khi ly dị, tuy vậy tôi cũng không mấy buồn vì nhà tôi cũng coi như còn của ăn của mặc. Và tôi vẫn giữ được quyền nuôi con sau ly hôn, đó...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2526",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/cai-may-de-cua-chinh-con-minh"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/cai-may-de-cua-chinh-con-minh"
+      }
+    },
+    {
+      "id": "2525-channel",
+      "name": "Cùng bạn chơi chị",
+      "description": "Chuyện xoay quanh 3 nhân vật chính là S là đứa em trai, H là chị của S, và G là bạn thân của S. S và G là 2 thằng bạn thân từ khi học cấp 1, không có trò nghịch ngợm nào mà 2 thằng...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2525",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/cung-ban-choi-chi"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/cung-ban-choi-chi"
+      }
+    },
+    {
+      "id": "2524-channel",
+      "name": "Không gầy cũng là thầy đụ",
+      "description": "Em Hàng Xóm Sugar Baby Nó là Nam, năm nay 2x tuổi, là một sinh viên IT đang học và làm trên HN. Thân hình nó không gầy cũng chẳng béo, người ta cũng hay nói nó dễ nhìn, gia cảnh cũng gọi...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2524",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/khong-gay-cung-la-thay-du"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/khong-gay-cung-la-thay-du"
+      }
+    },
+    {
+      "id": "2523-channel",
+      "name": "Hạnh phúc gia đình",
+      "description": "Buổi sinh nhật đứa bạn cùng lớp khiến Trung khát khô cổ. Quờ tay lên cái bàn đầu giường, không còn giọt nước nào. Mắt nhắm mắt mở, Trung xuống mở tủ lạnh dưới bếp. Chai...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2523",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/hanh-phuc-gia-dinh"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/hanh-phuc-gia-dinh"
+      }
+    },
+    {
+      "id": "2522-channel",
+      "name": "Phận nàng dâu",
+      "description": "Vân tỉnh giấc, nàng cựa quậy kéo cái chăn mỏng đắp lên người, nàng thấy đùi mình có chút nước, nàng biết rằng đó là thứ nước rỉ ra từ lồn nàng. Sáng nay Đức đã bơm...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2522",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/phan-nang-dau"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/phan-nang-dau"
+      }
+    },
+    {
+      "id": "2521-channel",
+      "name": "Mẹ và ông thợ xây",
+      "description": "Tôi sinh ra trong một gia đình bốn người bố mẹ đều là giáo viên, ở một vùng quê, năm 10 tuổi bố tôi không may qua đời, để lại ba mẹ con tôi, mẹ tôi lúc đấy mới ngoài 30...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2521",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/me-va-ong-tho-xay"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/me-va-ong-tho-xay"
+      }
+    },
+    {
+      "id": "2520-channel",
+      "name": "Vụng trộm cùng cô giảng viên",
+      "description": "Có anh em nào thích thú với phụ nữ là giảng viên, giáo viên không? Hôm nay tôi sẽ kể cho anh em một câu chuyện có thật về lần vụng trộm nhớ đời nhất trong cuộc đời tôi. Tôi...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2520",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/vung-trom-cung-co-giang-vien"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/vung-trom-cung-co-giang-vien"
+      }
+    },
+    {
+      "id": "2519-channel",
+      "name": "Đi cách ly cùng chị hàng xóm",
+      "description": "Xin chào mọi người tôi tên T năm nay cũng đã 18 tuổi thân hình cân đối, không béo, không gầy. Ai cũng biết trong thời gian vừa qua có 1 loại virus xâm chiếm vào nước ta gây ra cơn...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2519",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/di-cach-ly-cung-chi-hang-xom"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/di-cach-ly-cung-chi-hang-xom"
+      }
+    },
+    {
+      "id": "2518-channel",
+      "name": "Cặp đôi hoàn hảo",
+      "description": "Tôi và chị hai sống gần gũi nhau từ tuổi ấu thơ cho đến khi trưởng thành. Ngày đó cha mẹ tôi có cửa hàng bán tạp hóa ngoài chợ nên từ sáng sớm hai ông bà ra chợ cho đến...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2518",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/cap-doi-hoan-hao"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/cap-doi-hoan-hao"
+      }
+    },
+    {
+      "id": "2517-channel",
+      "name": "Chuyện tình loạn luân",
+      "description": "Hương sinh ra trong một gia đình giàu có. Sau khi lên 18 tuổi độ tuổi thì cơ thể nàng cà trổ ra cái gì to ra nó sẽ to thì Hương lại càng mang cho mình một cơ thể hoàn hảo hơn ai...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2517",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/chuyen-tinh-loan-luan"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/chuyen-tinh-loan-luan"
+      }
+    },
+    {
+      "id": "2516-channel",
+      "name": "Con đường ngoại tình của vợ",
+      "description": "Vợ tôi mới bảo sản xong 6 tháng thì nhận quyết định chuyển trường lên huyện miền núi cách nhà 2h chạy xe. Trường không có ký túc xá, chỉ có 1 nhà kho tận dụng làm phòng ở cho...",
+      "image": null,
+      "label": null,
+      "display": "text-only",
+      "type": "text",
+      "enable_detail": true,
+      "related": {
+        "url": "https://truyenx.link/truyensextv/channels/related/2516",
+        "request_headers": []
+      },
+      "share": {
+        "url": "https://truyenx.link/truyensextv/channels/share/con-duong-ngoai-tinh-cua-vo"
+      },
+      "remote_data": {
+        "url": "https://truyenx.link/truyensextv/channels/con-duong-ngoai-tinh-cua-vo"
+      }
+    }
+  ],
+  "load_more": {
+    "pageInfo": {
+      "current_page": 7,
+      "last_page": 140,
+      "per_page": 30,
+      "total": 4188
+    },
+    "paging": {
+      "page_key": "page",
+      "size_key": "size"
+    },
+    "remote_data": {
+      "url": "https://truyenx.link/truyensextv/channels"
+    }
+  }
+}

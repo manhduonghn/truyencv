@@ -1,0 +1,35 @@
+{
+  "provider": {
+    "id": "truyensextv",
+    "name": "TruyenSexTV",
+    "color": "#046106",
+    "description": "Truyện sex hay, đọc truyện sex mới mỗi ngày",
+    "url": "https://truyenx.link/truyensextv",
+    "image": {
+      "url": null,
+      "type": "cover",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "channel": {
+    "id": "13345-channel",
+    "name": "Âm thanh tình dục",
+    "description": "Tôi là Mai Anh, tôi đã kết hôn được hơn 1 năm. Sau 6 tháng kết hôn tôi phát hiện ra chồng đã có bồ bên ngoài. Kể sơ về nhà tôi: Nhà tôi có chồng tôi và 1 người bạn của chồng...",
+    "image": null,
+    "label": null,
+    "display": "text-only",
+    "type": "text",
+    "enable_detail": true,
+    "related": {
+      "url": "https://truyenx.link/truyensextv/channels/related/13345",
+      "request_headers": []
+    },
+    "share": {
+      "url": "https://truyenx.link/truyensextv/channels/share/am-thanh-tinh-duc"
+    },
+    "remote_data": {
+      "url": "https://truyenx.link/truyensextv/channels/am-thanh-tinh-duc"
+    }
+  }
+}
