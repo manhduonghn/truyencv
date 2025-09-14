@@ -1,0 +1,35 @@
+{
+  "provider": {
+    "id": "truyensextv",
+    "name": "TruyenSexTV",
+    "color": "#046106",
+    "description": "Truyện sex hay, đọc truyện sex mới mỗi ngày",
+    "url": "https://truyenx.link/truyensextv",
+    "image": {
+      "url": null,
+      "type": "cover",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "channel": {
+    "id": "13346-channel",
+    "name": "Làm tình phá trinh em họ",
+    "description": "Tôi tên là Tuấn, vào hè năm đó lúc đó tôi tầm 16 tuổi vì được nghỉ hè nên tôi có 1 chuyến về quê chơi cụ thể là ở Huế, và ở lại của chú thím nhà chú thì có 1 đứa con...",
+    "image": null,
+    "label": null,
+    "display": "text-only",
+    "type": "text",
+    "enable_detail": true,
+    "related": {
+      "url": "https://truyenx.link/truyensextv/channels/related/13346",
+      "request_headers": []
+    },
+    "share": {
+      "url": "https://truyenx.link/truyensextv/channels/share/lam-tinh-pha-trinh-em-ho"
+    },
+    "remote_data": {
+      "url": "https://truyenx.link/truyensextv/channels/lam-tinh-pha-trinh-em-ho"
+    }
+  }
+}

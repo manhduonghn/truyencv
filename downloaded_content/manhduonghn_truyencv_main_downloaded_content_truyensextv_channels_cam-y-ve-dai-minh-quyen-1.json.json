@@ -1,0 +1,476 @@
+{
+  "description": "Kỳ Châu Thành “Đề Kỵ tới!” Một tiếng thét kinh hãi thật sự giống như tiếng nổ giữa không trung, chợ Nam Kỳ Châu thành phồn hoa tấp nập nhất thời trở nên hỗn loạn...",
+  "sources": [
+    {
+      "id": "source-13452",
+      "name": "",
+      "contents": [
+        {
+          "id": "content-13452",
+          "name": "",
+          "grid_number": 1,
+          "streams": [
+            {
+              "id": "chapter-134368",
+              "index": 55,
+              "name": "Phần 55",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-55"
+              }
+            },
+            {
+              "id": "chapter-134366",
+              "index": 54,
+              "name": "Phần 54",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-54"
+              }
+            },
+            {
+              "id": "chapter-134365",
+              "index": 53,
+              "name": "Phần 53",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-53"
+              }
+            },
+            {
+              "id": "chapter-134367",
+              "index": 52,
+              "name": "Phần 52",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-52"
+              }
+            },
+            {
+              "id": "chapter-134364",
+              "index": 51,
+              "name": "Phần 51",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-51"
+              }
+            },
+            {
+              "id": "chapter-134363",
+              "index": 50,
+              "name": "Phần 50",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-50"
+              }
+            },
+            {
+              "id": "chapter-134361",
+              "index": 49,
+              "name": "Phần 49",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-49"
+              }
+            },
+            {
+              "id": "chapter-134362",
+              "index": 48,
+              "name": "Phần 48",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-48"
+              }
+            },
+            {
+              "id": "chapter-134359",
+              "index": 47,
+              "name": "Phần 47",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-47"
+              }
+            },
+            {
+              "id": "chapter-134356",
+              "index": 46,
+              "name": "Phần 46",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-46"
+              }
+            },
+            {
+              "id": "chapter-134355",
+              "index": 45,
+              "name": "Phần 45",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-45"
+              }
+            },
+            {
+              "id": "chapter-134360",
+              "index": 44,
+              "name": "Phần 44",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-44"
+              }
+            },
+            {
+              "id": "chapter-134357",
+              "index": 43,
+              "name": "Phần 43",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-43"
+              }
+            },
+            {
+              "id": "chapter-134358",
+              "index": 42,
+              "name": "Phần 42",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-42"
+              }
+            },
+            {
+              "id": "chapter-134352",
+              "index": 41,
+              "name": "Phần 41",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-41"
+              }
+            },
+            {
+              "id": "chapter-134354",
+              "index": 40,
+              "name": "Phần 40",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-40"
+              }
+            },
+            {
+              "id": "chapter-134353",
+              "index": 39,
+              "name": "Phần 39",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-39"
+              }
+            },
+            {
+              "id": "chapter-134351",
+              "index": 38,
+              "name": "Phần 38",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-38"
+              }
+            },
+            {
+              "id": "chapter-134349",
+              "index": 37,
+              "name": "Phần 37",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-37"
+              }
+            },
+            {
+              "id": "chapter-134348",
+              "index": 36,
+              "name": "Phần 36",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-36"
+              }
+            },
+            {
+              "id": "chapter-134347",
+              "index": 35,
+              "name": "Phần 35",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-35"
+              }
+            },
+            {
+              "id": "chapter-134346",
+              "index": 34,
+              "name": "Phần 34",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-34"
+              }
+            },
+            {
+              "id": "chapter-134345",
+              "index": 33,
+              "name": "Phần 33",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-33"
+              }
+            },
+            {
+              "id": "chapter-134343",
+              "index": 32,
+              "name": "Phần 32",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-32"
+              }
+            },
+            {
+              "id": "chapter-134342",
+              "index": 31,
+              "name": "Phần 31",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-31"
+              }
+            },
+            {
+              "id": "chapter-134350",
+              "index": 30,
+              "name": "Phần 30",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-30"
+              }
+            },
+            {
+              "id": "chapter-134339",
+              "index": 29,
+              "name": "Phần 29",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-29"
+              }
+            },
+            {
+              "id": "chapter-134340",
+              "index": 28,
+              "name": "Phần 28",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-28"
+              }
+            },
+            {
+              "id": "chapter-134344",
+              "index": 27,
+              "name": "Phần 27",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-27"
+              }
+            },
+            {
+              "id": "chapter-134341",
+              "index": 26,
+              "name": "Phần 26",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-26"
+              }
+            },
+            {
+              "id": "chapter-134337",
+              "index": 25,
+              "name": "Phần 25",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-25"
+              }
+            },
+            {
+              "id": "chapter-134338",
+              "index": 24,
+              "name": "Phần 24",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-24"
+              }
+            },
+            {
+              "id": "chapter-134336",
+              "index": 23,
+              "name": "Phần 23",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-23"
+              }
+            },
+            {
+              "id": "chapter-134334",
+              "index": 22,
+              "name": "Phần 22",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-22"
+              }
+            },
+            {
+              "id": "chapter-134335",
+              "index": 21,
+              "name": "Phần 21",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-21"
+              }
+            },
+            {
+              "id": "chapter-134333",
+              "index": 20,
+              "name": "Phần 20",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-20"
+              }
+            },
+            {
+              "id": "chapter-134331",
+              "index": 19,
+              "name": "Phần 19",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-19"
+              }
+            },
+            {
+              "id": "chapter-134332",
+              "index": 18,
+              "name": "Phần 18",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-18"
+              }
+            },
+            {
+              "id": "chapter-134329",
+              "index": 17,
+              "name": "Phần 17",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-17"
+              }
+            },
+            {
+              "id": "chapter-134328",
+              "index": 16,
+              "name": "Phần 16",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-16"
+              }
+            },
+            {
+              "id": "chapter-134326",
+              "index": 15,
+              "name": "Phần 15",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-15"
+              }
+            },
+            {
+              "id": "chapter-134327",
+              "index": 14,
+              "name": "Phần 14",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-14"
+              }
+            },
+            {
+              "id": "chapter-134330",
+              "index": 13,
+              "name": "Phần 13",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-13"
+              }
+            },
+            {
+              "id": "chapter-134324",
+              "index": 12,
+              "name": "Phần 12",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-12"
+              }
+            },
+            {
+              "id": "chapter-134322",
+              "index": 11,
+              "name": "Phần 11",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-11"
+              }
+            },
+            {
+              "id": "chapter-134323",
+              "index": 10,
+              "name": "Phần 10",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-10"
+              }
+            },
+            {
+              "id": "chapter-134325",
+              "index": 9,
+              "name": "Phần 9",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-9"
+              }
+            },
+            {
+              "id": "chapter-134319",
+              "index": 8,
+              "name": "Phần 8",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-8"
+              }
+            },
+            {
+              "id": "chapter-134316",
+              "index": 7,
+              "name": "Phần 7",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-7"
+              }
+            },
+            {
+              "id": "chapter-134315",
+              "index": 6,
+              "name": "Phần 6",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-6"
+              }
+            },
+            {
+              "id": "chapter-134320",
+              "index": 5,
+              "name": "Phần 5",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-5"
+              }
+            },
+            {
+              "id": "chapter-134321",
+              "index": 4,
+              "name": "Phần 4",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-4"
+              }
+            },
+            {
+              "id": "chapter-134318",
+              "index": 3,
+              "name": "Phần 3",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-3"
+              }
+            },
+            {
+              "id": "chapter-134317",
+              "index": 2,
+              "name": "Phần 2",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-2"
+              }
+            },
+            {
+              "id": "chapter-134314",
+              "index": 1,
+              "name": "Phần 1",
+              "remote_data": {
+                "url": "https://truyenx.link/truyensextv/channels/cam-y-ve-dai-minh-quyen-1/phan-1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "type": "radio",
+      "text": "Dâm thư Trung Quốc",
+      "url": "https://truyenx.link/truyensextv/channels?t=dam-thu-trung-quoc"
+    }
+  ],
+  "keys": [
+    {
+      "type": "radio",
+      "text": "Truyện sex dài tập",
+      "url": "https://truyenx.link/truyensextv/channels?c=truyen-sex-dai-tap"
+    }
+  ],
+  "report": {
+    "url": "https://www.facebook.com/monplayerapp",
+    "external": true
+  }
+}

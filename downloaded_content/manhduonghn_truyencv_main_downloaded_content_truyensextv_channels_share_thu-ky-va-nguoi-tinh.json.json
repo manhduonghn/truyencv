@@ -1,0 +1,35 @@
+{
+  "provider": {
+    "id": "truyensextv",
+    "name": "TruyenSexTV",
+    "color": "#046106",
+    "description": "Truyện sex hay, đọc truyện sex mới mỗi ngày",
+    "url": "https://truyenx.link/truyensextv",
+    "image": {
+      "url": null,
+      "type": "cover",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "channel": {
+    "id": "13455-channel",
+    "name": "Thư ký và người tình",
+    "description": "Ánh nắng cuối ngày vẽ một lớp bóng vàng cam lên khung cửa kính. Tầng 11, văn phòng Tổng Giám đốc công ty Pham’s Bamboo King tên quốc tế là PBK Group. Ông Danh khẽ nghiêng người...",
+    "image": null,
+    "label": null,
+    "display": "text-only",
+    "type": "text",
+    "enable_detail": true,
+    "related": {
+      "url": "https://truyenx.link/truyensextv/channels/related/13455",
+      "request_headers": []
+    },
+    "share": {
+      "url": "https://truyenx.link/truyensextv/channels/share/thu-ky-va-nguoi-tinh"
+    },
+    "remote_data": {
+      "url": "https://truyenx.link/truyensextv/channels/thu-ky-va-nguoi-tinh"
+    }
+  }
+}
