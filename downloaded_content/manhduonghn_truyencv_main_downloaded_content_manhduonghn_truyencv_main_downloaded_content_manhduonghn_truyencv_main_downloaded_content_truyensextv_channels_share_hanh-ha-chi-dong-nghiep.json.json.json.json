@@ -1,0 +1,35 @@
+{
+  "provider": {
+    "id": "truyensextv",
+    "name": "TruyenSexTV",
+    "color": "#046106",
+    "description": "Truyện sex hay, đọc truyện sex mới mỗi ngày",
+    "url": "https://truyenx.link/truyensextv",
+    "image": {
+      "url": null,
+      "type": "cover",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "channel": {
+    "id": "13454-channel",
+    "name": "Hành hạ chị đồng nghiệp",
+    "description": "Nuôi cổ trùng Người không biết được bản chất thật của Lưu Tân Vũ đều cho rằng Lưu Tân Vũ trầm mặc, ít nói chuyện, là một thanh niên nhút nhát, ngây ngô, hơn nữa lại có...",
+    "image": null,
+    "label": null,
+    "display": "text-only",
+    "type": "text",
+    "enable_detail": true,
+    "related": {
+      "url": "https://truyenx.link/truyensextv/channels/related/13454",
+      "request_headers": []
+    },
+    "share": {
+      "url": "https://truyenx.link/truyensextv/channels/share/hanh-ha-chi-dong-nghiep"
+    },
+    "remote_data": {
+      "url": "https://truyenx.link/truyensextv/channels/hanh-ha-chi-dong-nghiep"
+    }
+  }
+}
