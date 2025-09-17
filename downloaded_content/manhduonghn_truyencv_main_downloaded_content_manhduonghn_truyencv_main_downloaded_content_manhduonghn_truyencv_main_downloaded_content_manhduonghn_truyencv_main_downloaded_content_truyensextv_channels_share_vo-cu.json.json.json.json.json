@@ -1,0 +1,35 @@
+{
+  "provider": {
+    "id": "truyensextv",
+    "name": "TruyenSexTV",
+    "color": "#046106",
+    "description": "Truyện sex hay, đọc truyện sex mới mỗi ngày",
+    "url": "https://truyenx.link/truyensextv",
+    "image": {
+      "url": null,
+      "type": "cover",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "channel": {
+    "id": "13262-channel",
+    "name": "Vợ cũ",
+    "description": "Tiếng cành cạnh... cành cạch của vang lên mỗi khi đoàn tàu lăn bánh qua cái khớp nối giữa các thanh ray. Ngả lưng trên cái ghế nhìn qua tấm kính xuống dòng sông đỏ rực phù sa phía...",
+    "image": null,
+    "label": null,
+    "display": "text-only",
+    "type": "text",
+    "enable_detail": true,
+    "related": {
+      "url": "https://truyenx.link/truyensextv/channels/related/13262",
+      "request_headers": []
+    },
+    "share": {
+      "url": "https://truyenx.link/truyensextv/channels/share/vo-cu"
+    },
+    "remote_data": {
+      "url": "https://truyenx.link/truyensextv/channels/vo-cu"
+    }
+  }
+}
